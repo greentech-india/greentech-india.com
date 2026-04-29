@@ -2406,5 +2406,20 @@ window.addEventListener('scroll', () => {
 })();
 </script>
 
+<script>
+// Image protection
+document.addEventListener('contextmenu', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.preventDefault();
+    return false;
+  }
+});
+document.addEventListener('dragstart', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.preventDefault();
+    return false;
+  }
+});
+</script>
 </body>
 </html>
