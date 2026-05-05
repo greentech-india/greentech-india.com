@@ -235,93 +235,21 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
 .narr-section { padding: 96px 5%; }
 .narr-section.bg-white { background: var(--white); }
 .narr-section.bg-cream { background: var(--cream); }
-
-.narr-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
-  margin-bottom: 80px;
-  padding-bottom: 80px;
-  border-bottom: 1px solid rgba(26,71,49,0.08);
-}
+.narr-row { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-bottom: 80px; padding-bottom: 80px; border-bottom: 1px solid rgba(26,71,49,0.08); }
 .narr-row:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 .narr-row-reverse { }
-
 .narr-images { display: flex; flex-direction: column; gap: 16px; }
-.narr-img-wrap img {
-  width: 100%;
-  display: block;
-  border: 1px solid rgba(26,71,49,0.10);
-  object-fit: contain;
-  background: #f5f5f0;
-}
-
-.narr-eyebrow {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 12px;
-}
-.narr-heading {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(1.3rem, 2.5vw, 1.9rem);
-  font-weight: 700;
-  color: var(--green-deep);
-  line-height: 1.25;
-  margin-bottom: 16px;
-}
-.narr-divider {
-  width: 48px;
-  height: 2px;
-  background: var(--gold);
-  margin-bottom: 20px;
-}
-.narr-body {
-  font-size: 0.92rem;
-  color: var(--text-mid);
-  line-height: 1.85;
-}
-
-/* Cartoon feature */
-.cartoon-feature {
-  max-width: 860px;
-  margin: 0 auto 72px;
-  border: 3px solid var(--gold);
-  overflow: hidden;
-}
-.cartoon-feature img {
-  width: 100%;
-  display: block;
-  object-fit: contain;
-}
-.cartoon-caption {
-  padding: 16px 28px;
-  background: var(--green-deep);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.cartoon-quote {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.1rem;
-  font-style: italic;
-  color: var(--gold-light);
-}
-.cartoon-credit {
-  font-size: 0.7rem;
-  color: rgba(255,255,255,0.5);
-  letter-spacing: 0.1em;
-}
-
-@media (max-width: 900px) {
-  .narr-row, .narr-row-reverse { grid-template-columns: 1fr; gap: 32px; }
-}
-
+.narr-img-wrap img { width: 100%; display: block; border: 1px solid rgba(26,71,49,0.10); object-fit: contain; background: #f5f5f0; }
+.narr-eyebrow { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+.narr-heading { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.3rem, 2.5vw, 1.9rem); font-weight: 700; color: var(--green-deep); line-height: 1.25; margin-bottom: 16px; }
+.narr-divider { width: 48px; height: 2px; background: var(--gold); margin-bottom: 20px; }
+.narr-body { font-size: 0.92rem; color: var(--text-mid); line-height: 1.85; }
+.cartoon-feature { max-width: 860px; margin: 0 auto 72px; border: 3px solid var(--gold); overflow: hidden; }
+.cartoon-feature img { width: 100%; display: block; object-fit: contain; }
+.cartoon-caption { padding: 16px 28px; background: var(--green-deep); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+.cartoon-quote { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-style: italic; color: var(--gold-light); }
+.cartoon-credit { font-size: 0.7rem; color: rgba(255,255,255,0.5); letter-spacing: 0.1em; }
+@media (max-width: 900px) { .narr-row, .narr-row-reverse { grid-template-columns: 1fr; gap: 32px; } }
 </style>
 </head>
 <body>
@@ -339,7 +267,6 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
     <li><a href="#crisis">The Crisis</a></li>
     <li><a href="#solution">Solution</a></li>
     <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#before-after">Before &amp; After</a></li>
     <li><a href="#before-after">Before &amp; After</a></li>
     <li><a href="#calculator">Calculator</a></li>
     <li><a href="#faq">FAQ</a></li>
@@ -399,15 +326,9 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
   </div>
 
   <div id="archmaster-images" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:48px 0;max-width:900px;">
-    <div class="arch-img-slot" style="height:200px;position:relative;overflow:hidden;">
-      <img src="img1.jpg" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </div>
-    <div class="arch-img-slot" style="height:200px;position:relative;overflow:hidden;">
-      <img src="img2.jpg" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </div>
-    <div class="arch-img-slot" style="height:200px;position:relative;overflow:hidden;">
-      <img src="img4.jpg" style="width:100%;height:100%;object-fit:cover;display:block;">
-    </div>
+    <div class="arch-img-slot" style="height:200px;position:relative;overflow:hidden;"><img src="img1.jpg" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+    <div class="arch-img-slot" style="height:200px;position:relative;overflow:hidden;"><img src="img2.jpg" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
+    <div class="arch-img-slot" style="height:200px;position:relative;overflow:hidden;"><img src="img4.jpg" style="width:100%;height:100%;object-fit:cover;display:block;"></div>
   </div>
   <p class="img-fine-print" style="max-width:900px;">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
 
@@ -420,34 +341,10 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
       </div>
     </div>
     <div class="crisis-points">
-      <div class="crisis-point">
-        <div class="crisis-point-icon">⬇</div>
-        <div class="crisis-point-text">
-          <strong>Bore wells running dry earlier every year</strong>
-          <span>Documented steep drops in groundwater levels across Greater Mumbai. Fire temples in South Mumbai, housing societies in Kandivali — all report the same story.</span>
-        </div>
-      </div>
-      <div class="crisis-point">
-        <div class="crisis-point-icon">🏗</div>
-        <div class="crisis-point-text">
-          <strong>6,000 active construction sites extracting groundwater</strong>
-          <span>Every pile driven, every tunnel bored extracts groundwater as a byproduct. Every litre extracted is a litre not returned.</span>
-        </div>
-      </div>
-      <div class="crisis-point">
-        <div class="crisis-point-icon">🌧</div>
-        <div class="crisis-point-text">
-          <strong>Sponge parks failing within 4–6 years globally</strong>
-          <span>Science confirms: soil-based infiltration systems compact under use and monsoon cycling. The park looks green. The recharge has stopped. Mumbai's conditions accelerate this failure.</span>
-        </div>
-      </div>
-      <div class="crisis-point">
-        <div class="crisis-point-icon">🦟</div>
-        <div class="crisis-point-text">
-          <strong>The Breach Candy warning</strong>
-          <span>Open water in unmanaged excavations and water features breeds mosquitoes within 7–10 days — dengue, malaria, chikungunya. Residents of Breach Candy experienced this directly from the hospital car park excavation.</span>
-        </div>
-      </div>
+      <div class="crisis-point"><div class="crisis-point-icon">⬇</div><div class="crisis-point-text"><strong>Bore wells running dry earlier every year</strong><span>Documented steep drops in groundwater levels across Greater Mumbai. Fire temples in South Mumbai, housing societies in Kandivali — all report the same story.</span></div></div>
+      <div class="crisis-point"><div class="crisis-point-icon">🏗</div><div class="crisis-point-text"><strong>6,000 active construction sites extracting groundwater</strong><span>Every pile driven, every tunnel bored extracts groundwater as a byproduct. Every litre extracted is a litre not returned.</span></div></div>
+      <div class="crisis-point"><div class="crisis-point-icon">🌧</div><div class="crisis-point-text"><strong>Sponge parks failing within 4–6 years globally</strong><span>Science confirms: soil-based infiltration systems compact under use and monsoon cycling. The park looks green. The recharge has stopped. Mumbai's conditions accelerate this failure.</span></div></div>
+      <div class="crisis-point"><div class="crisis-point-icon">🦟</div><div class="crisis-point-text"><strong>The Breach Candy warning</strong><span>Open water in unmanaged excavations and water features breeds mosquitoes within 7–10 days — dengue, malaria, chikungunya. Residents of Breach Candy experienced this directly from the hospital car park excavation.</span></div></div>
     </div>
   </div>
 </section>
@@ -457,7 +354,6 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
   <span class="section-eyebrow">The BHUMIBLOC® System</span>
   <h2 class="section-title">Engineered from the sub-grade up.<br><em>Not just through the surface.</em></h2>
   <div class="divider-gold"></div>
-
   <div class="solution-grid">
     <div>
       <p class="solution-intro">"Conventional permeable paving allows water through the surface layer. What happens below determines whether recharge actually occurs."</p>
@@ -469,11 +365,7 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
     <div>
       <div style="font-size:0.72rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--green-mid);margin-bottom:16px;">System Cross-Section</div>
       <div style="position:relative;border:1px solid rgba(26,71,49,0.15);overflow:hidden;background:var(--white);">
-        <div style="background:rgba(26,71,49,0.06);padding:8px 16px;border-bottom:1px solid rgba(26,71,49,0.1);display:flex;align-items:center;gap:8px;">
-          <div style="width:8px;height:8px;background:var(--green-mid);border-radius:50%;"></div>
-          <div style="font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--green-mid);">Surface → Sub-grade</div>
-          <div style="margin-left:auto;font-size:0.65rem;color:var(--text-light);">Depth designed per project</div>
-        </div>
+        <div style="background:rgba(26,71,49,0.06);padding:8px 16px;border-bottom:1px solid rgba(26,71,49,0.1);display:flex;align-items:center;gap:8px;"><div style="width:8px;height:8px;background:var(--green-mid);border-radius:50%;"></div><div style="font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--green-mid);">Surface → Sub-grade</div><div style="margin-left:auto;font-size:0.65rem;color:var(--text-light);">Depth designed per project</div></div>
         <div style="display:flex;align-items:stretch;">
           <div style="width:48px;background:linear-gradient(to bottom,#e8f4fd,#b3d9f5,#1a4731);display:flex;flex-direction:column;align-items:center;justify-content:space-around;padding:8px 0;position:relative;overflow:hidden;" id="rainColumn">
             <div class="raindrop" style="width:3px;height:10px;background:rgba(79,195,247,0.8);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;animation:dropFall 1.2s infinite linear;animation-delay:0s;position:absolute;left:50%;transform:translateX(-50%);top:-10px;"></div>
@@ -631,10 +523,12 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
       </div>
     </div>
   </div>
+
+  <!-- CORRECTION 2: Technical "Applied to Roads" — Highways.png replaced with Aerial view.png -->
   <div class="narr-row">
     <div class="narr-images">
       <div class="narr-img-wrap">
-        <img src="Highways.png" alt="Mumbai Highways — Before and After BHUMIBLOC®" loading="lazy">
+        <img src="Aerial%20view.png" alt="Mahalaxmi Racecourse — Aerial View" loading="lazy">
         <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
@@ -645,6 +539,8 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
       <p class="narr-body">Every highway median, every road verge, every central reservation is a lost recharge opportunity. Under conventional construction, these surfaces are compacted fill — impermeable, functionless, waterlogged every monsoon. With BHUMIBLOC® specified in the sub-base, the same surface captures rainwater at source, eliminates waterlogging, and recharges the aquifer below. Safe roads. No stagnation. Continuous recharge.</p>
     </div>
   </div>
+
+  <!-- CORRECTION 4: Technical "Flagship Site" — added Mahalaxmi before/after image -->
   <div class="narr-row narr-row-reverse">
     <div class="narr-text">
       <div class="narr-eyebrow">The Flagship Site</div>
@@ -654,15 +550,20 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
     </div>
     <div class="narr-images">
       <div class="narr-img-wrap">
-        <img src="race%20course%20coastal%20pond%20mosquito%20breading.png" alt="Mahalaxmi Racecourse & Coastal Road — Stagnant Ponds to Recharging Landscapes" loading="lazy">
+        <img src="water_bodies_race_course_Coastal.png" alt="Mahalaxmi Racecourse & Coastal Road — Stagnant Ponds to Recharging Landscapes" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="Mahalaxmi_race_course_flooding_before_and_after.png" alt="Mahalaxmi Race Course Mumbai — Before and After BHUMIBLOC®" loading="lazy">
         <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
   </div>
+
   <div class="narr-row">
     <div class="narr-images">
       <div class="narr-img-wrap">
-        <img src="mosquito%20breading%201.png" alt="Stagnant Water to Groundwater Recharge — Stop Mosquito Breeding" loading="lazy">
+        <img src="Mahalaxmi_Race_Course.png" alt="Stagnant Water to Groundwater Recharge — Stop Mosquito Breeding" loading="lazy">
         <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
@@ -673,6 +574,8 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
       <p class="narr-body">Stagnant water breeds Aedes mosquitoes within 7–10 days. Dengue, malaria, chikungunya, filariasis — all preventable if water moves. BHUMIBLOC® eliminates surface stagnation by moving water downward within hours of a rain event. No surface ponding. No breeding cycle. No health risk. And every litre that moves downward recharges the aquifer instead of breeding disease.</p>
     </div>
   </div>
+
+  <!-- BIOSWALE stays in Technical as-is (BIOSWALE.png — technical diagram) -->
   <div class="narr-row narr-row-reverse">
     <div class="narr-text">
       <div class="narr-eyebrow">The Complete System</div>
@@ -703,7 +606,6 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
       <div class="cartoon-credit">Cartoon: Satish Acharya &#183; Mumbai</div>
     </div>
   </div>
-
 
   <div class="narr-row">
     <div class="narr-images">
@@ -803,6 +705,8 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
       <p class="narr-body">There are approximately 6,000 active construction sites in Greater Mumbai. Every pile driven, every foundation dug, every tunnel bored extracts groundwater as a byproduct. Every litre extracted is a litre not returned. Industrial zones compound the problem — high impermeable surface coverage, high water demand, zero recharge contribution. BHUMIBLOC® can change that for every site.</p>
     </div>
   </div>
+
+  <!-- CORRECTION 3: Flagship Sites — Aerial view removed, stagnant pond added -->
   <div class="narr-row narr-row-reverse">
     <div class="narr-text">
       <div class="narr-eyebrow">The Flagship Sites</div>
@@ -816,7 +720,7 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
         <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
       <div class="narr-img-wrap">
-        <img src="Aerial%20view.png" alt="Aerial View — Mahalaxmi Racecourse" loading="lazy">
+        <img src="water_bodies_race_course_Coastal.png" alt="Mahalaxmi Racecourse — Stagnant Pond Before BHUMIBLOC®" loading="lazy">
         <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
       <div class="narr-img-wrap">
@@ -825,6 +729,7 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
       </div>
     </div>
   </div>
+
   <div class="narr-row">
     <div class="narr-images">
       <div class="narr-img-wrap">
@@ -861,10 +766,12 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
       </div>
     </div>
   </div>
+
+  <!-- CORRECTION 1 & 5: Before&After Bioswale — replaced BIOSWALE.png with Bioswale_correction.jpg -->
   <div class="narr-row">
     <div class="narr-images">
       <div class="narr-img-wrap">
-        <img src="BIOSWALE.png" alt="Bioswale — Declining Performance to Consistent Recharge" loading="lazy">
+        <img src="Bioswale_correction.jpg" alt="Bioswale Mumbai — Before and After BHUMIBLOC® Certified Subsurface Recharge" loading="lazy">
         <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
