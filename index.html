@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Green Tech India — BHUMIBLOC® Certified Solutions for BHUMIJAL™ Groundwater Recharge. Engineered sub-base systems that catch Mumbai's rain where it falls.">
-<meta name="keywords" content="groundwater recharge, BHUMIBLOC, BHUMIJAL, Mumbai water, sponge park, ecological hydrology, Green Tech India">
-<title>Green Tech India — BHUMIBLOC® Groundwater Recharge</title>
+<meta name="description" content="Bhumi Ecosystems — BHUMIBLOC® Certified Solutions for BHUMIJAL™ Groundwater Recharge. Engineered sub-base systems that catch Mumbai's rain where it falls.">
+<meta name="keywords" content="groundwater recharge, BHUMIBLOC, BHUMIJAL, Mumbai water, sponge park, ecological hydrology, Bhumi Ecosystems">
+<title>Bhumi Ecosystems — BHUMIBLOC® Groundwater Recharge</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -230,6 +230,98 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
   .footer-top { grid-template-columns: 1fr; gap: 32px; }
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
 }
+
+/* ── NARRATIVE LAYOUT ── */
+.narr-section { padding: 96px 5%; }
+.narr-section.bg-white { background: var(--white); }
+.narr-section.bg-cream { background: var(--cream); }
+
+.narr-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid rgba(26,71,49,0.08);
+}
+.narr-row:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.narr-row-reverse { }
+
+.narr-images { display: flex; flex-direction: column; gap: 16px; }
+.narr-img-wrap img {
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(26,71,49,0.10);
+  object-fit: contain;
+  background: #f5f5f0;
+}
+
+.narr-eyebrow {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+.narr-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+  font-weight: 700;
+  color: var(--green-deep);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+.narr-divider {
+  width: 48px;
+  height: 2px;
+  background: var(--gold);
+  margin-bottom: 20px;
+}
+.narr-body {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  line-height: 1.85;
+}
+
+/* Cartoon feature */
+.cartoon-feature {
+  max-width: 860px;
+  margin: 0 auto 72px;
+  border: 3px solid var(--gold);
+  overflow: hidden;
+}
+.cartoon-feature img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+.cartoon-caption {
+  padding: 16px 28px;
+  background: var(--green-deep);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.cartoon-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--gold-light);
+}
+.cartoon-credit {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 900px) {
+  .narr-row, .narr-row-reverse { grid-template-columns: 1fr; gap: 32px; }
+}
+
 </style>
 </head>
 <body>
@@ -239,8 +331,8 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
   <a href="#home" class="nav-brand">
     <img class="nav-logo" src="BHUMIBLOC_Website_Logo.png" alt="BHUMIBLOC® Logo" style="width:52px;height:52px;object-fit:contain;">
     <div class="nav-title">
-      <span>Green Tech India</span>
-      <span>BHUMIBLOC® Certified Solutions</span>
+      <span>Bhumi Ecosystems</span>
+      <span style="font-size:0.55rem;">Green Living Technologies Enterprises India</span>
     </div>
   </a>
   <ul class="nav-links">
@@ -264,7 +356,7 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
     <div class="hero-eyebrow">BHUMIBLOC® Certified Solutions for BHUMIJAL™ Groundwater Recharge</div>
     <h1>Mumbai receives enough rain<br><em>for everyone.</em></h1>
     <p class="hero-sub">Every monsoon, millions of litres rush off our roads, rooftops, and parks — straight into the sea. Never stored. Never used. Gone.</p>
-    <p class="hero-body">BHUMIBLOC® is a NABL-certified engineered sub-base system that converts any permeable urban surface into a permanent groundwater recharge engine — beneath parks, racecourses, open spaces, and institutional grounds. Invisible. Permanent. Powerful.</p>
+    <p class="hero-body">BHUMIBLOC® — Bhumi Ecosystems' certified engineered sub-base system that converts any permeable urban surface into a permanent groundwater recharge engine — beneath parks, racecourses, open spaces, and institutional grounds. Invisible. Permanent. Powerful.</p>
     <div class="hero-actions">
       <a href="#solution" class="btn-primary">See the Solution</a>
       <a href="#faq" class="btn-outline">Common Questions</a>
@@ -317,7 +409,7 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
       <img src="img4.jpg" style="width:100%;height:100%;object-fit:cover;display:block;">
     </div>
   </div>
-  <p class="img-fine-print" style="max-width:900px;">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</p>
+  <p class="img-fine-print" style="max-width:900px;">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
 
   <div class="crisis-grid">
     <div class="crisis-visual">
@@ -408,7 +500,7 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
       <div class="arch-img-slot" style="margin-top:16px;height:320px;overflow:hidden;">
         <img src="img3.jpg" style="width:100%;height:100%;object-fit:contain;display:block;background:#f5f5f0;">
       </div>
-      <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</p>
+      <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
     </div>
   </div>
 
@@ -500,220 +592,287 @@ footer { background: #0d2e1c; color: rgba(255,255,255,0.5); padding: 48px 5% 32p
   </div>
 </section>
 
-<!-- GALLERY -->
-<section class="gallery-section" id="gallery">
-  <span class="section-eyebrow">Before &amp; After — Real Outcomes</span>
-  <h2 class="section-title">Same Rain. <em>Different Outcome.</em></h2>
+<!-- TECHNICAL DIAGRAMS NARRATIVE -->
+<section class="narr-section bg-white" id="gallery">
+  <span class="section-eyebrow">Technical Diagrams</span>
+  <h2 class="section-title">The Science Behind<br><em>BHUMIBLOC®</em></h2>
   <div class="divider-gold"></div>
-  <p class="section-body" style="margin-bottom:8px;">BHUMIBLOC® certified solutions applied across highways, urban green spaces, racecourse landscapes, and water bodies — converting runoff into groundwater recharge.</p>
-  <div class="gallery-grid">
-    <div class="gallery-card">
-      <img src="urban%20ground%20water%20recharge.png" alt="Urban Groundwater Recharge — CGWB vs BHUMIBLOC®" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Urban Groundwater Recharge — CGWB vs BHUMIBLOC®</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+  <p class="section-body" style="margin-bottom:64px;">Certified performance data, system comparisons, and site-specific applications — the complete technical case for BHUMIBLOC® as India's urban groundwater recharge solution.</p>
+
+  <div class="narr-row">
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="urban%20ground%20water%20recharge.png" alt="Urban Flooding to Groundwater Recharge" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="CGWB%20VS%20BHUMI%20recharge.png" alt="CGWB vs BHUMIBLOC® System Comparison" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">CGWB Approach vs BHUMIBLOC® — System Comparison</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Problem</div>
+      <h3 class="narr-heading">The Urban Water Crisis — What Is Happening Today</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">Mumbai floods every monsoon and thirsts every March. The reason is not a lack of rain — it is a lack of recharge. Every litre that falls on a road, a roof, or a compacted park runs straight to the drain and into the sea within hours. The aquifer beneath the city receives almost nothing back.</p>
+    </div>
+  </div>
+  <div class="narr-row narr-row-reverse">
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Comparison</div>
+      <h3 class="narr-heading">CGWB Conventional Systems vs BHUMIBLOC® — Same Rain, Different Outcome</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">The Central Ground Water Board recommends conventional recharge pits and trenches. These work — but they clog, silt up, and require constant maintenance. BHUMIBLOC® is a certified engineered subsurface system that captures rainwater at source, filters it through multiple layers, stores it in a sub-surface void matrix, and releases it slowly to the aquifer. No clogging. No maintenance. No decline over time.</p>
+    </div>
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="CGWB%20VS%20BHUMI%20recharge.png" alt="CGWB Recommended Approach vs BHUMIBLOC® Engineered Solution" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="CGWB%20VS%20BHUMI.png" alt="CGWB vs BHUMIBLOC® — System Performance Comparison" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="CGWB%20VS%20BHUMI.png" alt="Urban Flooding to Groundwater Recharge" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Urban Flooding to Groundwater Recharge</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+  </div>
+  <div class="narr-row">
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="Highways.png" alt="Mumbai Highways — Before and After BHUMIBLOC®" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="Highways.png" alt="Mumbai Highways — Waterlogging to Recharge" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Mumbai Highways — Waterlogging to Recharge</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+    <div class="narr-text">
+      <div class="narr-eyebrow">Applied to Roads</div>
+      <h3 class="narr-heading">Mumbai Highways — Waterlogging to Groundwater Recharge</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">Every highway median, every road verge, every central reservation is a lost recharge opportunity. Under conventional construction, these surfaces are compacted fill — impermeable, functionless, waterlogged every monsoon. With BHUMIBLOC® specified in the sub-base, the same surface captures rainwater at source, eliminates waterlogging, and recharges the aquifer below. Safe roads. No stagnation. Continuous recharge.</p>
+    </div>
+  </div>
+  <div class="narr-row narr-row-reverse">
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Flagship Site</div>
+      <h3 class="narr-heading">Mahalaxmi Racecourse & Coastal Road — India's Largest Urban Recharge Opportunity</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">The Mahalaxmi Racecourse and Coastal Road precinct — 298 acres at the heart of Mumbai — is India's single largest urban groundwater recharge opportunity. BHUMIBLOC® specified across the 404,700 m² addressable surface delivers 320 million litres of groundwater recharge every year. More than 35,000 conventional CGWB recharge structures combined. This is the number that changes Mumbai's water future.</p>
+    </div>
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="race%20course%20coastal%20pond%20mosquito%20breading.png" alt="Mahalaxmi Racecourse & Coastal Road — Stagnant Ponds to Recharging Landscapes" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="mosquito%20breading%201.png" alt="Stagnant Water to Recharge — Stop Mosquito Breeding" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Stagnant Water to Recharge — Stop Mosquito Breeding</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+  </div>
+  <div class="narr-row">
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="mosquito%20breading%201.png" alt="Stagnant Water to Groundwater Recharge — Stop Mosquito Breeding" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="race%20course%20coastal%20pond%20mosquito%20breading.png" alt="Mahalaxmi Racecourse and Coastal Road" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Mahalaxmi Racecourse &amp; Coastal Road — Ponds Transformed</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Health Argument</div>
+      <h3 class="narr-heading">Stagnant Water Breeds Disease — Moving Water Recharges the Ground</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">Stagnant water breeds Aedes mosquitoes within 7–10 days. Dengue, malaria, chikungunya, filariasis — all preventable if water moves. BHUMIBLOC® eliminates surface stagnation by moving water downward within hours of a rain event. No surface ponding. No breeding cycle. No health risk. And every litre that moves downward recharges the aquifer instead of breeding disease.</p>
     </div>
-    <div class="gallery-card">
-      <img src="BIOSWALE.png" alt="Bioswale — Consistent Recharge" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Bioswale — Declining Performance to Consistent Recharge</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+  </div>
+  <div class="narr-row narr-row-reverse">
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Complete System</div>
+      <h3 class="narr-heading">Bioswale Integration — Green Infrastructure That Actually Works</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">Bioswales are an excellent design intent — they slow runoff, filter pollutants, and look green. But without an engineered sub-base below, the water stalls in compacted fill and drains laterally rather than vertically. The bioswale fills, saturates, and eventually becomes a surface feature that neither recharges the aquifer nor prevents flooding. BHUMIBLOC® is the sub-base layer that transforms a bioswale from a surface retention feature into an active groundwater recharge engine.</p>
+    </div>
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="BIOSWALE.png" alt="Bioswale — Declining Performance to Consistent Recharge with BHUMIBLOC®" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BEFORE AFTER GALLERY -->
-<section class="gallery-section" id="before-after" style="background:var(--cream);">
+<!-- BEFORE & AFTER NARRATIVE -->
+<section class="narr-section bg-cream" id="before-after">
   <span class="section-eyebrow">Before &amp; After &#8212; Mumbai Sites</span>
   <h2 class="section-title">The Crisis Is Real.<br><em>So Is the Solution.</em></h2>
   <div class="divider-gold"></div>
-  <p class="section-body" style="margin-bottom:40px;">From waterlogged roads to depleting bore wells &#8212; Mumbai&#39;s water crisis is visible everywhere. BHUMIBLOC&#174; converts every one of these sites into a permanent groundwater recharge engine.</p>
+  <p class="section-body" style="margin-bottom:64px;">From waterlogged roads to depleting bore wells &#8212; Mumbai&#39;s water crisis is visible everywhere. BHUMIBLOC&#174; converts every one of these sites into a permanent groundwater recharge engine.</p>
 
-  <div style="max-width:900px;margin:0 auto 48px;border:3px solid var(--gold);overflow:hidden;background:var(--white);">
-    <img src="090709.jpg" alt="Water Water Everywhere Not a Drop to Drink Mumbai Water Crisis Cartoon Satish Acharya" style="width:100%;display:block;object-fit:contain;" loading="lazy">
-    <div style="padding:16px 24px;background:var(--green-deep);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
-      <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--gold-light);">&#8220;Water, Water Everywhere &#8212; Not a Drop to Drink.&#8221;</div>
-      <div style="font-size:0.7rem;color:rgba(255,255,255,0.5);letter-spacing:0.1em;">Cartoon: Satish Acharya &#183; Mumbai</div>
+  <div class="cartoon-feature">
+    <img src="090709.jpg" alt="Water Water Everywhere Not a Drop to Drink Mumbai Water Crisis Cartoon Satish Acharya" loading="lazy">
+    <div class="cartoon-caption">
+      <div class="cartoon-quote">&#8220;Water, Water Everywhere &#8212; Not a Drop to Drink.&#8221;</div>
+      <div class="cartoon-credit">Cartoon: Satish Acharya &#183; Mumbai</div>
     </div>
   </div>
 
-  <div class="gallery-grid">
-    <div class="gallery-card">
-      <img src="Aerial%20view.png" alt="Aerial View — Mahalaxmi Racecourse" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Aerial View — Mahalaxmi Racecourse</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+
+  <div class="narr-row">
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="Aquifer.png" alt="Aquifer Recharge — How BHUMIBLOC® Works" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="Borewell%20Ground%20water%20level.png" alt="Borewell Ground Water Level — The Declining Reality" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="Aquifer.png" alt="Aquifer Recharge — How BHUMIBLOC® Works" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Aquifer Recharge — How BHUMIBLOC® Works</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+    <div class="narr-text">
+      <div class="narr-eyebrow">Start Here</div>
+      <h3 class="narr-heading">Bore Wells & Aquifer — The Invisible Crisis Beneath the City</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">Mumbai's groundwater crisis is invisible — until the bore well runs dry. Groundwater levels across Greater Mumbai have been falling for decades. Fire temples in South Mumbai report failing wells. Housing societies in Kandivali report pump run times doubling every year. The aquifer is being extracted far faster than it is being recharged. BHUMIBLOC® reverses that equation.</p>
+    </div>
+  </div>
+  <div class="narr-row narr-row-reverse">
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Scale of the Problem</div>
+      <h3 class="narr-heading">Climate Change & Township Development — The Crisis Deepens</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">Every new township, every new road, every new building adds more impermeable surface to a city already running at near-zero recharge. Climate change intensifies monsoon events — more rain in shorter bursts, more runoff, more flooding, less infiltration. The engineering response must be permanent, not seasonal. BHUMIBLOC® is designed for 20+ years of undiminished performance.</p>
+    </div>
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="climate%20change.png" alt="Climate Change — Mumbai's Water Challenge" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="township.png" alt="Township Development — Groundwater Recharge at Scale" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="Borewell%20Ground%20water%20level.png" alt="Borewell Ground Water Level — The Declining Reality" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Borewell Ground Water Level — The Declining Reality</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+  </div>
+  <div class="narr-row">
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="overflowing%20storm%20water.png" alt="Overflowing Storm Water — The Crisis" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="cars%20submerged.png" alt="Cars Submerged — Mumbai Monsoon Reality" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="car%20park%20basement%20flooding.png" alt="Car Park Basement Flooding — Before BHUMIBLOC®" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="car%20park%20basement%20flooding.png" alt="Car Park Basement Flooding" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Car Park Basement Flooding</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Paradox</div>
+      <h3 class="narr-heading">Flooding & Storm Water — Drowning and Thirsting Simultaneously</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">Mumbai receives 2,400mm of rain every year — enough for everyone. But 73% of the city's surface is impermeable. Rain falls, drains fill, the sea receives what the aquifer should. The result is a city that floods in July and thirsts by March. Every flooded road, every submerged car park, every overflowing drain is a missed recharge opportunity. BHUMIBLOC® captures that water at source.</p>
+    </div>
+  </div>
+  <div class="narr-row narr-row-reverse">
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Largest Opportunity</div>
+      <h3 class="narr-heading">Highways, Roads & Traffic — Where Mumbai's Rain Is Lost</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">Roads and highways cover a vast proportion of Mumbai's surface. Every median, every verge, every central reservation is compacted, impermeable, and waterlogged every monsoon. BHUMIBLOC® specified in the sub-base of any road corridor converts the entire length into a linear groundwater recharge system. Safe roads. No waterlogging. No runoff. Continuous recharge beneath every lane.</p>
+    </div>
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="road%20and%20traffic.png" alt="Roads & Traffic — Runoff Captured at Source" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="Highways.png" alt="Mumbai Highways — Waterlogging to Recharge" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="cars%20submerged.png" alt="Cars Submerged — Mumbai Monsoon Reality" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Cars Submerged — Mumbai Monsoon Reality</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+  </div>
+  <div class="narr-row">
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="construction%20site.png" alt="Construction Site Groundwater Extraction" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="Image%20industrial.png" alt="Industrial Zone — Engineered Recharge" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="Image%20approved%201.png" alt="Urban Green Space — BHUMIBLOC® Applied" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="childrens%20play%20ground.png" alt="Children's Playground — Safe, Dry, Recharged" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Children's Playground — Safe, Dry, Recharged</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+    <div class="narr-text">
+      <div class="narr-eyebrow">Making It Worse</div>
+      <h3 class="narr-heading">Construction Sites & Industrial Zones — Extracting Without Returning</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">There are approximately 6,000 active construction sites in Greater Mumbai. Every pile driven, every foundation dug, every tunnel bored extracts groundwater as a byproduct. Every litre extracted is a litre not returned. Industrial zones compound the problem — high impermeable surface coverage, high water demand, zero recharge contribution. BHUMIBLOC® can change that for every site.</p>
+    </div>
+  </div>
+  <div class="narr-row narr-row-reverse">
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Flagship Sites</div>
+      <h3 class="narr-heading">Mahalaxmi Racecourse, Aerial View & Golf Course — The Open Green Opportunity</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">Mumbai's remaining large open green spaces — the Racecourse, the Coastal Road gardens, golf courses, institutional grounds — are the city's last best recharge opportunity. These sites sit on permeable soil, receive concentrated monsoon rainfall, and currently contribute almost nothing to the aquifer. BHUMIBLOC® specified across these surfaces turns them into the city's most powerful recharge engines.</p>
+    </div>
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="race%20course%202.png" alt="Mahalaxmi Racecourse — 320 Million Litres/Year Potential" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="Aerial%20view.png" alt="Aerial View — Mahalaxmi Racecourse" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="golf%20course.png" alt="Golf Course — Natural Recharge Opportunity" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="climate%20change.png" alt="Climate Change — Mumbai's Water Challenge" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Climate Change — Mumbai's Water Challenge</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+  </div>
+  <div class="narr-row">
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="childrens%20play%20ground.png" alt="Children's Playground — Safe, Dry, Recharged" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="football%20stadium.png" alt="Football Stadium — Permeable Surfaces" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="construction%20site.png" alt="Construction Site Groundwater Extraction" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Construction Site Groundwater Extraction</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Solution at Every Scale</div>
+      <h3 class="narr-heading">Urban Green Spaces — Every Surface Counts</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">The BHUMIBLOC® system is modular and scalable — from a 200 m² housing society garden to a 200,000 m² open ground. A children's playground, a football pitch, an institutional campus — any permeable surface can be converted into an active recharge system. The build-up and performance are identical at every scale. Every surface counts.</p>
+    </div>
+  </div>
+  <div class="narr-row narr-row-reverse">
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Proof</div>
+      <h3 class="narr-heading">Sponge Gardens — Before & After BHUMIBLOC®</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">Global research confirms that soil-based sponge gardens fail within 4–6 years. The park stays green. The recharge stops. Peer-reviewed studies show infiltration rates falling 70–99% after compaction. Mumbai's conditions — high water table, intense monsoon, heavy footfall — accelerate this failure. BHUMIBLOC® is inorganic. It cannot compact, biodegrade, or fail. It performs on Day 1 and on Day 7,300.</p>
+    </div>
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="Sponge%20garden%201.png" alt="Sponge Garden — Engineered for Permanence" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
+      </div>
+      <div class="narr-img-wrap">
+        <img src="sponge%20garden.png" alt="Sponge Garden — BHUMIBLOC® Sub-Base System" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="football%20stadium.png" alt="Football Stadium — Permeable Surfaces" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Football Stadium — Permeable Surfaces</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
+  </div>
+  <div class="narr-row">
+    <div class="narr-images">
+      <div class="narr-img-wrap">
+        <img src="BIOSWALE.png" alt="Bioswale — Declining Performance to Consistent Recharge" loading="lazy">
+        <p class="img-fine-print">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
       </div>
     </div>
-    <div class="gallery-card">
-      <img src="golf%20course.png" alt="Golf Course — Natural Recharge Opportunity" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Golf Course — Natural Recharge Opportunity</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="Image%20approved%201.png" alt="Urban Green Space — BHUMIBLOC® Applied" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Urban Green Space — BHUMIBLOC® Applied</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="Image%20industrial.png" alt="Industrial Zone — Engineered Recharge" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Industrial Zone — Engineered Recharge</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="overflowing%20storm%20water.png" alt="Overflowing Storm Water — The Crisis" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Overflowing Storm Water — The Crisis</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="race%20course%202.png" alt="Mahalaxmi Racecourse — 320 Million Litres/Year Potential" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Mahalaxmi Racecourse — 320 Million Litres/Year Potential</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="road%20and%20traffic.png" alt="Roads & Traffic — Runoff Captured at Source" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Roads & Traffic — Runoff Captured at Source</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="Sponge%20garden%201.png" alt="Sponge Garden — Engineered for Permanence" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Sponge Garden — Engineered for Permanence</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="sponge%20garden.png" alt="Sponge Garden — BHUMIBLOC® Sub-Base System" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Sponge Garden — BHUMIBLOC® Sub-Base System</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="township.png" alt="Township Development — Groundwater Recharge at Scale" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Township Development — Groundwater Recharge at Scale</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="BIOSWALE.png" alt="Bioswale — Consistent Recharge" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Bioswale — Consistent Recharge</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
-    </div>
-    <div class="gallery-card">
-      <img src="Highways.png" alt="Mumbai Highways — Waterlogging to Recharge" loading="lazy">
-      <div class="gallery-caption">
-        <div class="gallery-caption-title">Mumbai Highways — Waterlogging to Recharge</div>
-        <div class="gallery-caption-note">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</div>
-      </div>
+    <div class="narr-text">
+      <div class="narr-eyebrow">The Final Proof</div>
+      <h3 class="narr-heading">Bioswale — Green Looks Good. But Is It Working?</h3>
+      <div class="narr-divider"></div>
+      <p class="narr-body">A bioswale with BHUMIBLOC® beneath it is not just green — it is a certified groundwater recharge engine. Water moves. Mosquitoes cannot breed. The aquifer refills. Year after year, without decline, without maintenance, without failure. This is what engineered ecological infrastructure looks like when it is built to last.</p>
     </div>
   </div>
 </section>
@@ -801,13 +960,13 @@ document.getElementById('calcArea').addEventListener('keypress',function(e){if(e
 
 <!-- ABOUT -->
 <section class="about" id="about">
-  <span class="section-eyebrow">About Green Tech India</span>
-  <h2 class="section-title">Founded on five decades<br><em>of making things work.</em></h2>
+  <span class="section-eyebrow">About Bhumi Ecosystems</span>
+  <h2 class="section-title">Bhumi Ecosystems<br><em>Founded on five decades of making things work.</em></h2>
   <div class="divider-gold"></div>
   <div class="about-grid">
     <div>
       <div class="about-body">
-        <p>Green Tech India is founded and led by Suneel M Bhatnagar — an independent infrastructure concept developer and global systems integrator with over 50 years of pioneered, on-site project delivery across more than 600 projects.</p>
+        <p>Bhumi Ecosystems is founded and led by Suneel Mahendra Bhatnagar — an independent infrastructure concept developer and global systems integrator with over 50 years of pioneered, on-site project delivery across more than 600 projects.</p>
         <p>Commissioned by John Murdoch of News Corp, Suneel designed and delivered RADIO CITY 91 FM — India's first Broadcasting studio, from concept to completion, on air as promised.</p>
         <p>As Honorary Secretary of the Nariman Point Churchgate Citizens Association under founder Mrs. Swaran Kohli — wife of Dr. F.C. Kohli, father of the Indian software industry — Suneel played an active role in the Marine Drive Promenade restoration, engaging directly with Commissioner K C Shrivastava, working alongside structural consultants and in interactions with Architect Ratan Batliboi.</p>
       </div>
@@ -815,14 +974,14 @@ document.getElementById('calcArea').addEventListener('keypress',function(e){if(e
         <p style="font-size:0.88rem;color:rgba(255,255,255,0.8);line-height:1.8;font-style:italic;">Mr. Mahendra Biharilal Bhatnagar — Freedom Fighter — TAMRAPATRA recipient — together with his son Suneel built hundreds of Computer Mainframe suites during the Electronic Era, spearheaded by Dr. F.C. Kohli, father of the Indian software industry, who was pivotal in shifting the world's perspective on India from a resource-dependent country to a hub of Computer Centres and Software Engineering talent.</p>
       </div>
       <div class="about-quote">"Imagination is more important than knowledge." — Albert Einstein</div>
-      <div class="about-body"><p>Today, that imagination — and those five decades — are focused on a single national imperative: India's water crisis. Green Tech India holds exclusive all-India partnerships with the world's leading ecological technology firms from Germany and Italy — making their proven global systems compatible with Indian site conditions, tendering processes, and working practices.</p></div>
+      <div class="about-body"><p>Today, that imagination — and those five decades — are focused on a single national imperative: India's water crisis. Bhumi Ecosystems holds exclusive all-India partnerships with the world's leading ecological technology firms from Germany and Italy — making their proven global systems compatible with Indian site conditions, tendering processes, and working practices.</p></div>
     </div>
     <div>
       <div class="credentials-list">
         <div class="cred-item"><div class="cred-year">1970s→</div><div class="cred-text"><strong>600+ Projects</strong>India's leading industrial houses, real estate groups, and institutions. Clean rooms, mainframes, acoustics, elevated floors, turnkey civil and interior.</div></div>
         <div class="cred-item"><div class="cred-year">Radio</div><div class="cred-text"><strong>RADIO CITY 91 FM — India's First Broadcasting Studio</strong>Commissioned by John Murdoch, News Corp · Design to Finish · On air as promised.</div></div>
         <div class="cred-item"><div class="cred-year">NPCCA</div><div class="cred-text"><strong>Marine Drive Promenade</strong>Honorary Secretary · Mrs. Swaran Kohli · Commissioner K C Shrivastava · Interactions with Architect Ratan Batliboi.</div></div>
-        <div class="cred-item"><div class="cred-year">2026</div><div class="cred-text"><strong>BHUMIJAL™ · BHUMIBLOC®</strong>NABL certified · Exclusive India partnerships with leading ecological technology firms · Germany · Italy · Mumbai's urban groundwater mission.</div></div>
+        <div class="cred-item"><div class="cred-year">2026</div><div class="cred-text"><strong>BHUMIJAL™ · BHUMIBLOC®</strong>Bhumi Ecosystems · NABL certified · Exclusive India partnerships with leading ecological technology firms · Germany · Italy · Mumbai's urban groundwater mission.</div></div>
       </div>
     </div>
   </div>
@@ -876,7 +1035,7 @@ document.getElementById('calcArea').addEventListener('keypress',function(e){if(e
     <div class="arch-img-slot" style="height:320px;overflow:hidden;background:#0d2e1c;">
       <img src="img5.jpg" style="width:100%;height:100%;object-fit:contain;display:block;">
     </div>
-    <p class="img-fine-print" style="color:rgba(255,255,255,0.4);margin-top:8px;">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Green Tech India.</p>
+    <p class="img-fine-print" style="color:rgba(255,255,255,0.4);margin-top:8px;">The build-up shown is indicative. Actual site specifications are proprietary and prepared exclusively by Bhumi Ecosystems.</p>
   </div>
 </section>
 
@@ -891,7 +1050,8 @@ document.getElementById('calcArea').addEventListener('keypress',function(e){if(e
   <div class="footer-top">
     <div>
       <img src="BHUMIBLOC_Website_Logo.png" alt="BHUMIBLOC® Logo" style="width:80px;height:auto;object-fit:contain;">
-      <div class="footer-brand-name">Green Living Technologies Enterprises India</div>
+      <div class="footer-brand-name" style="font-size:1.5rem;letter-spacing:0.02em;">Bhumi Ecosystems</div>
+      <div style="font-size:0.72rem;color:rgba(255,255,255,0.45);margin-bottom:12px;letter-spacing:0.04em;">Green Living Technologies Enterprises India</div>
       <div class="footer-tagline">Catch The <span style="color:var(--gold-light);font-size:1.1em;font-weight:700;">RAIN</span> Where It Falls — When It Falls</div>
       <div class="footer-desc">BHUMIBLOC® Certified Solutions for BHUMIJAL™ Groundwater Recharge. Exclusive all-India partnerships with the world's leading ecological technology firms from Germany and Italy.</div>
     </div>
@@ -922,7 +1082,7 @@ document.getElementById('calcArea').addEventListener('keypress',function(e){if(e
     </div>
   </div>
   <div class="footer-bottom">
-    <div>© 2026 Green Living Technologies Enterprises India. All rights reserved.</div>
+    <div>© 2026 Bhumi Ecosystems. All rights reserved.</div>
     <div class="footer-tm">BHUMIBLOC® Registered Mark · NABL TC-14500 · ISO/IEC 17025:2017</div>
   </div>
 </footer>
